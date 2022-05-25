@@ -1,0 +1,40 @@
+.EventItem {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    border-radius: .5rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.EventItem section {
+    padding: 0.5rem 1rem;
+}
+
+.EventItem_Image {
+    max-width: 100%;
+    height: 350px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+:where(.EventItem_Title, .EventItem_Date, .EventItem_Address) {
+    display: block;
+}
+
+.EventItem_Title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.EventItem_Date {
+    font-weight: bold;
+    color: #474747;
+    display: flex;
+    align-items: center;
+}
+
+.EventItem_Address {
+    white-space: pre-line;
+    font-style: italic;
+    display: flex;
+}

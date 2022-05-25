@@ -1,0 +1,33 @@
+.MainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e95959;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.MainHeader_Logo {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.MainHeader_Nav {
+    display: block;
+}
+
+.MainHeader_NavItems {
+    display: flex;
+}
+
+.MainHeader_NavItems li {
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
+.MainHeader_NavItems li:last-child {
+    margin-right: 0;
+}

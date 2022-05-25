@@ -1,0 +1,37 @@
+.EventSearch {
+    padding: 1rem;
+    margin-top: 2rem;
+    background-color: white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    border-radius: 0.35rem;
+    display: flex;
+    align-items: center;
+}
+
+.EventSearch_Controls {
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.EventSearch_Controls__Group {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+.EventSearch_Controls__Group label {
+    margin-right: .25rem;
+    font-weight: bold;
+}
+
+.EventSearch_Controls__Group select {
+    width: 100%;
+    display: block;
+    font-size: 1rem;
+    border-radius: .25rem;
+    padding: .25rem;
+}
