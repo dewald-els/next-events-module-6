@@ -1,0 +1,9 @@
+.Card {
+    position: relative;
+    z-index: 99;
+    background-color: white;
+    border-radius: .35rem;
+    padding: 2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1rem;
+}

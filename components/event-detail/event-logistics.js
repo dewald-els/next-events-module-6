@@ -1,17 +1,14 @@
 import CalendarIcon from "../ui/icons/calendar";
 import LocationIcon from "../ui/icons/location";
 import css from "./event-logistics.module.css";
+import Card from "../ui/card";
 
-function EventLogistics({image, imageAlt, date, address}) {
-
-    console.log(image)
+function EventLogistics({date, address}) {
 
     return (
-        <section className={css.EventLogistics}>
-            <header>
-                <img className={css.EventLogistics_Image} src={"/" + image} alt={imageAlt}/>
-            </header>
-            <div className="container">
+        <Card>
+            <h4>INFO</h4>
+            <section className={css.EventLogistics}>
                 <p className={css.EventLogistics_Item}>
                     <span><CalendarIcon size={24}/></span>
                     <span>{date}</span>
@@ -20,8 +17,8 @@ function EventLogistics({image, imageAlt, date, address}) {
                     <span><LocationIcon size={24}/></span>
                     <span>{address}</span>
                 </p>
-            </div>
-        </section>
+            </section>
+        </Card>
     );
 }
 

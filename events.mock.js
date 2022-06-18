@@ -1,7 +1,8 @@
-/**
+/*
+/!**
  * Events Array
  * @type {[{date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean},{date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean},{date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean}]}
- */
+ *!/
 const DUMMY_EVENTS = [
     {
         id: 'e1',
@@ -35,27 +36,27 @@ const DUMMY_EVENTS = [
     },
 ];
 
-/**
+/!**
  * Get featured events
  * @returns {({date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean}|{date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean}|{date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean})[]}
- */
+ *!/
 export function getFeaturedEvents() {
     return DUMMY_EVENTS.filter((event) => event.isFeatured);
 }
 
-/**
+/!**
  * Get all events
  * @returns {[{date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean},{date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean},{date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean}]}
- */
+ *!/
 export function getAllEvents() {
     return DUMMY_EVENTS;
 }
 
-/**
+/!**
  * Get events by a specific date
  * @param dateFilter
  * @returns {({date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean}|{date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean}|{date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean})[]}
- */
+ *!/
 export function getFilteredEvents(dateFilter) {
     const {year, month} = dateFilter;
 
@@ -67,11 +68,11 @@ export function getFilteredEvents(dateFilter) {
     return filteredEvents;
 }
 
-/**
+/!**
  * Get an event by its id.
  * @param id
  * @returns {{date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean} | {date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean} | {date: string, image: string, description: string, location: string, id: string, title: string, isFeatured: boolean}}
- */
+ *!/
 export function getEventById(id) {
     return DUMMY_EVENTS.find((event) => event.id === id);
-}
+}*/
