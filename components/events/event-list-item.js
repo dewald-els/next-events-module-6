@@ -4,6 +4,7 @@ import ButtonLink from "../ui/button-link";
 import ChevronRightIcon from "../ui/icons/chevron-right";
 import CalendarIcon from "../ui/icons/calendar";
 import LocationIcon from "../ui/icons/location";
+import Image from "next/image";
 
 /**
  * An Event Item child of EventList
@@ -23,7 +24,11 @@ function EventListItem({event}) {
 
     return (<li className={css.EventItem}>
         <header>
-            <img className={css.EventItem_Image} src={"/" + event.image} alt={event.title}/>
+            <Image src={"/" + event.image}
+                   alt={event.title}
+                   className={css.EventItem_Image}
+                   width="1200px"
+                   height="450px"/>
         </header>
         <section>
             <span className={css.EventItem_Title}>{event.title}</span>

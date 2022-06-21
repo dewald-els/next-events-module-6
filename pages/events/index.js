@@ -2,6 +2,7 @@ import EventList from "../../components/events/event-list";
 import EventSearch from "../../components/events/event-search";
 import {useRouter} from "next/router";
 import {getAllEvents} from "../../api/events";
+import Head from "next/head";
 
 function EventsPage(props) {
 
@@ -13,10 +14,16 @@ function EventsPage(props) {
     };
 
     return (
-        <div className="container">
-            <EventSearch onSearch={handleSearch}/>
-            <EventList events={events}/>
-        </div>
+        <>
+            <Head>
+                <title>NextJS - All Events</title>
+            </Head>
+            <div className="container">
+                <EventSearch onSearch={handleSearch}/>
+                <EventList events={events}/>
+            </div>
+        </>
+
     );
 }
 

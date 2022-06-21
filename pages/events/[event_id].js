@@ -2,6 +2,7 @@ import EventContent from "../../components/event-detail/event-content";
 import EventLogistics from "../../components/event-detail/event-logistics";
 import {getEventById, getFeaturedEvents} from "../../api/events";
 import EventDetailHeader from "../../components/event-detail/event-detail-header";
+import Head from "next/head";
 
 function EventDetailPage(props) {
 
@@ -16,13 +17,18 @@ function EventDetailPage(props) {
     }
 
     return (
-        <div>
-            <EventDetailHeader image={event.image} imageAlt={event.title}/>
-            <div className="container">
-                <EventContent title={event.title} description={event.description}/>
-                <EventLogistics date={event.date} address={event.location}/>
+        <>
+            <Head>
+                <title>NextJS - { event.title }</title>
+            </Head>
+            <div>
+                <EventDetailHeader image={event.image} imageAlt={event.title}/>
+                <div className="container">
+                    <EventContent title={event.title} description={event.description}/>
+                    <EventLogistics date={event.date} address={event.location}/>
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 
